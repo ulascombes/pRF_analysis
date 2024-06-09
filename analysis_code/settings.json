@@ -1,0 +1,7 @@
+{
+    "formats": ["fsnative", "170k"],
+    "extensions": ["func.gii", "dtseries.nii"],
+    "maps_names_vert_area": ["vert_area"],
+    "subjects" : ["sub-01", "sub-02"]
+
+}
