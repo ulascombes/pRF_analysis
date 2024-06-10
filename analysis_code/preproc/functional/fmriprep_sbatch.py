@@ -35,6 +35,7 @@ python fmriprep_sbatch.py [main directory] [project name] [subject num]
 Exemple:
 cd ~/projects/pRF_analysis/analysis_code/preproc/functional
 python fmriprep_sbatch.py /scratch/mszinte/data MotConf sub-01 30 anat_only_n aroma_n fmapfree_n skip_bids_val_y cifti_output_170k_y fsaverage_y 12 uriel.lascombes@etu.univ-amu.fr 327 b327
+python fmriprep_sbatch.py /scratch/mszinte/data MotConf sub-01 30 anat_only_n aroma_n fmapfree_n skip_bids_val_y cifti_output_170k_y fsaverage_n 6 uriel.lascombes@etu.univ-amu.fr 327 b327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (mail@martinszinte.net)
 Edited by Uriel Lascombes (uriel.lascombes@laposte.net)
@@ -68,7 +69,7 @@ server_project = sys.argv[14]
 
 # Define cluster/server specific parameters
 cluster_name  = 'skylake'
-singularity_dir = "{main_dir}/{project_dir}/code/singularity/fmriprep-23.2.3.simg".format(
+singularity_dir = "{main_dir}/{project_dir}/code/singularity/fmriprep-22.1.1.simg".format(
     main_dir=main_dir, project_dir=project_dir)
 nb_procs = 32
 memory_val = 100
