@@ -2,7 +2,7 @@
 
 ## About
 ---
-* General code for main analysis of MotConf project.</br>*
+*General code for main analysis of MotConf project.</br>*
 
 ---
 ## Authors (alphabetic order): 
@@ -26,7 +26,7 @@ Analyses are run on individual participant (**sub-0X**) surface (**fsnative**) o
 - [x] manual edit of brain segmentation [pial_edits.sh](analysis_code/preproc/anatomical/pial_edits.sh)
 - [x] FreeSurfer with new brainmask manually edited [freesurfer_pial.py](analysis_code/preproc/anatomical/freesurfer_pial.py)
 - [x] create sagital view video before after edit [sagital_view.py](analysis_code/preproc/anatomical/sagital_view.py)
-- [ ] make cut in the brains for flattening [cortex_cuts.sh](analysis_code/preproc/anatomical/cortex_cuts.sh)
+- [x] make cut in the brains for flattening [cortex_cuts.sh](analysis_code/preproc/anatomical/cortex_cuts.sh)
 - [ ] flatten the cut brains [flatten_sbatch.py](analysis_code/preproc/anatomical/flatten_sbatch.py)
 - [ ] Compute vertex areas [compute_vertex_area.py](analysis_code/preproc/anatomical/compute_vertex_area.py)
 
