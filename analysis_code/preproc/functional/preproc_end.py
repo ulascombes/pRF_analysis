@@ -42,7 +42,6 @@ import sys
 import glob
 import json
 import shutil
-import cortex
 import datetime
 import numpy as np
 import nibabel as nb
@@ -52,9 +51,8 @@ from nilearn.glm.first_level.design_matrix import _cosine_drift
 
 # Personal imports
 sys.path.append("{}/../../utils".format(os.getcwd()))
-from cifti_utils import from_59k_to_170k
 from surface_utils import load_surface , make_surface_image
-from pycortex_utils import calculate_vertex_areas, load_surface_pycortex, set_pycortex_config_file
+from pycortex_utils import set_pycortex_config_file
 
 # Time
 start_time = datetime.datetime.now()
