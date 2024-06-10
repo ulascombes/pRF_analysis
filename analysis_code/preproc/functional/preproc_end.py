@@ -21,8 +21,8 @@ To run:
 python preproc_end.py [main directory] [project name] [subject] [group]
 -----------------------------------------------------------------------------------------
 Exemple:
-cd ~/projects/RetinoMaps/analysis_code/preproc/functional/
-python preproc_end.py /scratch/mszinte/data RetinoMaps sub-01 327
+cd ~/projects/pRF_analysis/analysis_code/preproc/functional/
+python preproc_end.py /scratch/mszinte/data MotConf sub-01 327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (mail@martinszinte.net)
 Edited by Uriel Lascombes (uriel.lascombes@laposte.net)
@@ -159,12 +159,12 @@ preproc_files_list = [preproc_fsnative_hemi_L,
 for preproc_files in preproc_files_list:
     for task in tasks:
         # Defind output files names 
-        preproc_files_task = [file for file in preproc_files if task in file]
+        preproc_files_task = [file for file in preproc_files if 'task-{}'.format(task) in file]
 
         if not preproc_files_task:
             print('No files for {}'.format(task))
             continue
-        
+
         if preproc_files_task[0].find('hemi-L') != -1: hemi = 'hemi-L'
         elif preproc_files_task[0].find('hemi-R') != -1: hemi = 'hemi-R'
         else: hemi = None

@@ -22,8 +22,8 @@ To run:
 >> python preproc_end_sbatch.py [main directory] [project] [subject] [group [server num]
 -----------------------------------------------------------------------------------------
 Exemple:
-cd ~/projects/RetinoMaps/analysis_code/preproc/functional
-python preproc_end_sbatch.py /scratch/mszinte/data RetinoMaps sub-01 327 b327
+cd ~/projects/pRF_analysis/analysis_code/preproc/functional
+python preproc_end_sbatch.py /scratch/mszinte/data MotConf sub-01 327 b327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (martin.szinte@gmail.com)
 Edited by Uriel Lascombes (uriel.lascombes@laposte.net)
@@ -87,7 +87,7 @@ preproc_end_surf_cmd = "python preproc_end.py {} {} {} {}".format(main_dir, proj
 sh_fn = "{}/{}_preproc_end.sh".format(job_dir, subject)
 
 of = open(sh_fn, 'w')
-of.write("{} \n{} \n{}".format(slurm_cmd, preproc_end_surf_cmd))
+of.write("{} \n{}".format(slurm_cmd, preproc_end_surf_cmd))
 of.close()
 
 # Submit jobs
