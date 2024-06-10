@@ -21,8 +21,8 @@ To run:
 python compute_run_corr.py [main directory] [project name] [subject name] [group]
 -----------------------------------------------------------------------------------------
 Exemple:
-cd ~/projects/RetinoMaps/analysis_code/preproc/functional/
-python compute_run_corr.py /scratch/mszinte/data RetinoMaps sub-01 327
+cd ~/projects/pRF_analysis/analysis_code/preproc/functional/
+python compute_run_corr.py /scratch/mszinte/data MotConf sub-01 327
 python compute_run_corr.py /scratch/mszinte/data RetinoMaps sub-170k 327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (mail@martinszinte.net)
@@ -111,7 +111,7 @@ if subject != 'sub-170k':
     for preproc_files in preproc_files_list:
         for task in tasks:
             # Defind output files names 
-            preproc_files_task = [file for file in preproc_files if task in file]
+            preproc_files_task = [file for file in preproc_files if 'task-{}'.format(task) in file]
     
             if not preproc_files_task:
                 print('No files for {}'.format(task))

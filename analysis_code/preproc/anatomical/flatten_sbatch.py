@@ -16,12 +16,12 @@ preprocessed files
 -----------------------------------------------------------------------------------------
 To run:
 1. cd to function
->> cd ~/projects/RetinoMaps/analysis_code/preproc/anatomical/
+>> cd ~/projects/pRF_analysis/analysis_code/preproc/anatomical/
 2. run python command
 python flatten_sbatch.py [main directory] [project name] [subject] [group]
 -----------------------------------------------------------------------------------------
 Example:
-python flatten_sbatch.py /scratch/mszinte/data RetinoMaps sub-01 327 b327
+python flatten_sbatch.py /scratch/mszinte/data MotConf sub-01 327 b327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (mail@martinszinte.net)
 -----------------------------------------------------------------------------------------
@@ -30,8 +30,6 @@ Written by Martin Szinte (mail@martinszinte.net)
 # imports modules
 import sys
 import os
-import time
-import json
 opj = os.path.join
 
 # inputs

@@ -21,7 +21,7 @@
 # >> sh pycortex_maps_run_corr.sh [code directory] [project name] [main directory]
 # -----------------------------------------------------------------------------------------
 # Exemple:
-# cd ~/disks/meso_H/projects/RetinoMaps/analysis_code/preproc/functional/
+# cd ~/disks/meso_H/projects/pRF_analysis/analysis_code/preproc/functional/
 # sh pycortex_maps_run_corr.sh /home/mszinte/disks/meso_H/projects RetinoMaps /home/mszinte/disks/meso_S/data
 # -----------------------------------------------------------------------------------------
 # Written by Martin Szinte (martin.szinte@gmail.com)
