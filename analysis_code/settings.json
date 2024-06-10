@@ -2,6 +2,14 @@
     "formats": ["fsnative", "170k"],
     "extensions": ["func.gii", "dtseries.nii"],
     "maps_names_vert_area": ["vert_area"],
-    "subjects" : ["sub-01", "sub-02"]
+    "subjects" : ["sub-01", "sub-02"],
+    "TR": 1.2,
+    "task_names": ["pRF", "MotConf"],
+    "prf_task_name": "pRF",
+    "high_pass_threshold": 0.01,
+    "sessions" : ["ses-01", "ses-02","ses-03"],
+    "anat_session": ["ses-02"],
+    "cluster_name": "skylake",
+    "project_name": "MotConf"
 
 }

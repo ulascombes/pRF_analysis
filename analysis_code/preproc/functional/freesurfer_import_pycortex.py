@@ -16,12 +16,13 @@ None
 -----------------------------------------------------------------------------------------
 To run:
 1. cd to function
->> cd ~/projects/RetinoMaps/analysis_code/preproc/functional/
+>> cd ~/projects/[PROJECT]/analysis_code/preproc/functional/
 2. run python command
 python freesurfer_import_pycortex.py [main directory] [project name] [subject] [group]
 -----------------------------------------------------------------------------------------
 Executions:
-python freesurfer_import_pycortex.py /scratch/mszinte/data RetinoMaps sub-24 327
+cd ~/projects/pRF_analysis/analysis_code/preproc/functional/
+python freesurfer_import_pycortex.py /scratch/mszinte/data MotConf sub-01 327
 -----------------------------------------------------------------------------------------
 Written by Martin Szinte (mail@martinszinte.net)
 -----------------------------------------------------------------------------------------
